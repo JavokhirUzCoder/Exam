@@ -16,3 +16,12 @@ else:
 
 if 1 in Newcounter:
     print(Numbers[Newcounter.index(1)])
+
+
+file = open("input.txt", "w+")
+file.write(f'{Numbers}')
+file.close()
+
+file = open("output.txt", "w+")
+file.write(f'{Numbers[Newcounter.index(1)]}')
+file.close()

@@ -1,7 +1,17 @@
 def Dayofcoder(year):
     if year % 4 == 0:
-        print(f"12/09{year}")
+        return f"12/09{year}"
     else:
-        print(f"13/09{year}")
+        return f"13/09{year}"
 
-Dayofcoder(int(input()))
+x = int(input())
+print(Dayofcoder(x))
+
+
+file = open("input.txt", "w+")
+file.write(f'{x}')
+file.close()
+
+file = open("output.txt", "w+")
+file.write(f'{Dayofcoder(x)}')
+file.close()
